@@ -5,19 +5,19 @@ import Maratonajava.devdojo.javacore.Bmetodos.dominio.Estudante;
 public class EstudanteTeste01 {
     public static void main(String[] args) {
         Estudante estudante = new Estudante();
-        Estudante estudante02 = new Estudante();
+        Estudante estudantee = new Estudante();
 
-        estudante.name = "Gabimaru";
-        estudante.age = 20;
-        estudante.sex = 'M';
+        estudante.name = "Lila";
+        estudante.age = 19;
+        estudante.sex = 'F';
 
 
-        estudante02.name = "Noelle";
-        estudante02.age = 20;
-        estudante02.sex = 'F';
+        estudantee.name = "Jorel";
+        estudantee.age = 21;
+        estudantee.sex = 'M';
 
         estudante.imprime();
-        estudante02.imprime();
+        estudantee.imprime();
 
     }
 }
