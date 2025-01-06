@@ -10,6 +10,14 @@ public class Calculadora {
     }
 
     public double divdoisnum(double num1, double num2) {
-        return num1/num2;
+        return num1 / num2;
+    }
+
+    public void somaAr(int[] nums) {
+        int soma = 0;
+        for (int all : nums) {
+            soma += all;
+            System.out.println(soma);
+        }
     }
 }
