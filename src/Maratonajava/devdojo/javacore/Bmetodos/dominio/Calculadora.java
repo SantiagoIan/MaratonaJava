@@ -13,11 +13,19 @@ public class Calculadora {
         return num1 / num2;
     }
 
-    public void somaAr(int[] nums) {
+    public void somaAr(int[] numeros) {
         int soma = 0;
-        for (int all : nums) {
+        for (int all : numeros) {
             soma += all;
-            System.out.println(soma);
         }
+        System.out.println(soma);
+    }
+
+    public void somaVarArgs(int... numeros){
+        int soma = 0;
+        for (int all : numeros) {
+            soma += all;
+        }
+        System.out.println(soma);
     }
 }
