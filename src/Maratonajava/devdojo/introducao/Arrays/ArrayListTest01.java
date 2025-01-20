@@ -10,13 +10,17 @@ public class ArrayListTest01 {
         arrayDinamico.add("Sandra"); // Indice 1
         arrayDinamico.add("Sergio"); // Indice 2
 
+        System.out.println("Dentro do for normal");
         for (int i = 0; i < arrayDinamico.size(); i++) {
             System.out.println(i + " - " + arrayDinamico.get(i));
         }
 
         System.out.println();
+        int i = 0;
+
+        System.out.println("Dentro do foreach");
         for (String indice : arrayDinamico) {
-            System.out.println(indice);
+            System.out.println(++i + " - " + indice);
         }
 
 
