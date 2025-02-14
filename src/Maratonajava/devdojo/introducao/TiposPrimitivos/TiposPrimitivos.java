@@ -14,5 +14,6 @@ public class TiposPrimitivos {
         boolean falso = false;
 
         char caractere = 'A';
+
     }
 }
