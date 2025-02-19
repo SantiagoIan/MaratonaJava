@@ -1,7 +1,6 @@
 package Maratonajava.devdojo.javacore.Npolimorfismo.Teste;
 
 import Maratonajava.devdojo.javacore.Npolimorfismo.Dominio.Computador;
-import Maratonajava.devdojo.javacore.Npolimorfismo.Dominio.Produto;
 import Maratonajava.devdojo.javacore.Npolimorfismo.Dominio.Tomate;
 import Maratonajava.devdojo.javacore.Npolimorfismo.Servico.CalculadoraImposto;
 
