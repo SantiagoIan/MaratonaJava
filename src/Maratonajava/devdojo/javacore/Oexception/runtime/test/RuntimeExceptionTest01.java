@@ -5,5 +5,8 @@ public class RuntimeExceptionTest01 {
         // Cheked e Unchecked
         Object object = null;
         System.out.println(object.toString());
+
+        int[] nums = {1,2};
+        System.out.println(nums[2]);
     }
 }
