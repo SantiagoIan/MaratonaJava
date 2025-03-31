@@ -14,7 +14,7 @@ public class ExceptionTeste01 {
             boolean isCriado = file.createNewFile();
             System.out.println("Arquivo criado: " + isCriado);
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // Fundamental colocar o StackTrace, se nao a Exception nao funciona.
         }
     }
 }
