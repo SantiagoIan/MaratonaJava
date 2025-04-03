@@ -26,6 +26,7 @@ public class RuntimeExceptionTeste03 {
     private static int divisao(int a, int b) {
         if (b == 0) {
             throw new ArithmeticException("Divisão por zero não é permitida");
+            // throw new , usado para lançar uma exceção
         }
         return a / b;
     }
