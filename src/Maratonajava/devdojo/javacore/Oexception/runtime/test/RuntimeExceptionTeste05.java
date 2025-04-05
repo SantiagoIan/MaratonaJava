@@ -8,17 +8,11 @@ public class RuntimeExceptionTeste05 {
     public static void main(String[] args) {
 
         try {
-
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Dentro do ArrayIndexOutOfBoundsException");
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Dentro do IndexOutOfBoundsException");
-        } catch (IllegalAccessError e) {
-            System.out.println("Dentro do IllegalAccessError");
+            throw new RuntimeException();
+        } catch (ArrayIndexOutOfBoundsException | IllegalAccessError | ArithmeticException e) {
+            System.out.println("Dentro do ArrayIndexOutOfBoundsException | IllegalAccessError | ArithmeticException");
         } catch (RuntimeException e) {
             System.out.println("Dentro do RuntimeException");
-        } catch (Exception e) {
-            System.out.println("Dentro do Exception");
         } finally {
             System.out.println("Dentro do finally");
         }
@@ -26,10 +20,8 @@ public class RuntimeExceptionTeste05 {
 
         try {
             talvezLanceExcecao();
-        } catch (SQLException throwables) {
+        } catch (SQLException | FileNotFoundException throwables) {
             throwables.printStackTrace();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
     }
 
