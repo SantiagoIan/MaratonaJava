@@ -1,6 +1,7 @@
 package Maratonajava.devdojo.javacore.Oexception.runtime.test;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.sql.SQLPermission;
 
@@ -20,12 +21,12 @@ public class RuntimeExceptionTeste05 {
 
         try {
             talvezLanceExcecao();
-        } catch (SQLException | FileNotFoundException throwables) {
+        } catch (SQLException | IOException throwables) {
             throwables.printStackTrace();
         }
     }
 
-    private static void talvezLanceExcecao() throws SQLException, FileNotFoundException {
+    private static void talvezLanceExcecao() throws SQLException, IOException {
         // Lança uma exceção
         // throw new SQLException();
         // throw new FileNotFoundException();
