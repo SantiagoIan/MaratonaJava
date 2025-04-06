@@ -3,7 +3,7 @@ package Maratonajava.devdojo.javacore.Oexception.runtime.test;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.sql.SQLPermission;
+
 
 public class RuntimeExceptionTeste05 {
     public static void main(String[] args) {
