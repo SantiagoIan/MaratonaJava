@@ -30,6 +30,20 @@ public class WrapperTeste01 {
         Character charWrapper = 'A'; // Autoboxing
         Boolean booleanWrapper = true; // Autoboxing
 
+        int i = intWrapper; // Unboxing
+        Integer intWrapper2 = Integer.parseInt("1"); // Autoboxing
+        boolean verdadeiro = Boolean.parseBoolean("true"); // Autoboxing
+        System.out.println(verdadeiro+"\n");
+
+        System.out.println(Character.isDigit('A')); // Verifica se o caractere é um dígito
+        System.out.println(Character.isDigit('1')); // Verifica se o caractere é um dígito
+        System.out.println(Character.isLetter('A')); // Verifica se o caractere é uma letra
+        System.out.println(Character.isLetterOrDigit('!')); // Verifica se o caractere é uma letra ou dígito
+        System.out.println(Character.isUpperCase('A')); // Verifica se o caractere é maiúsculo
+        System.out.println(Character.isLowerCase('a')); // Verifica se o caractere é minúsculo
+        System.out.println(Character.toLowerCase('A')); // Converte o caractere para minúsculo
+        System.out.println(Character.toUpperCase('a')); // Converte o caractere para maiúsculo
+
         // Autoboxing é o processo de conversão de um tipo primitivo para um objeto wrapper
         // Unboxing é o processo de conversão de um objeto wrapper para um tipo primitivo
 
