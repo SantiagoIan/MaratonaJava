@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-public class NumberFormatTeste01 {
+public class NumberFormatTeste02 {
     public static void main(String[] args) {
 
         Locale ptbr = new Locale("pt", "BR");
@@ -12,19 +12,21 @@ public class NumberFormatTeste01 {
         Locale it = Locale.ITALY;
         Locale jp = Locale.JAPAN;
         NumberFormat[] nf = new NumberFormat[4];
-        nf[0] = NumberFormat.getInstance();
-        nf[1] = NumberFormat.getInstance(it);
-        nf[2] = NumberFormat.getInstance(en);
-        nf[3] = NumberFormat.getInstance(jp);
+        nf[0] = NumberFormat.getCurrencyInstance();
+        nf[1] = NumberFormat.getCurrencyInstance(it);
+        nf[2] = NumberFormat.getCurrencyInstance(en);
+        nf[3] = NumberFormat.getCurrencyInstance(jp);
 
-        float valor = 1_000.2132f;
+        double valor = 1000.2132;
         for (NumberFormat numberFormat : nf) {
+            System.out.println(numberFormat.getMaximumFractionDigits()); // ver quantas casas decimais
             System.out.println(numberFormat.format(valor));
         }
+
         System.out.println("-------------------------------------------------");
-        String valorString = "1.000,2132";
+        String valorString = "1,000.21";
         try{
-            System.out.println(nf[0].parse(valorString));
+            System.out.println(nf[2].parse(valorString));
         }catch (ParseException e){
             e.printStackTrace();
 
